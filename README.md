@@ -59,16 +59,42 @@ Usage
 A ternary object is created using A = ternary()
 
 The 3 gates that only take 1 input can be called  
-using dot notation. e.g. A.on() Note that this  
-does not change the state of A that would be done  
-like so A = A.on()
+using dot notation.
 
-Alternativey ternary_logic.gates.ON(A) can be used
+e.g.
+<pre>
+A.on()
+</pre>
+Note that this does not change the state of A. That
+would be done like so
+<pre>
+A = A.on()
+</pre>
+Alternativey,
+<pre>
+ternary_logic.gates.ON(A)
+</pre>
+can be used.
 
-The OR gate can be called using '^'. e.g. A ^ B  
-or ternary_logic.gates.OR(A, B)
+The OR gate can be called using '^'.
 
-The AND gate can be called using '+'. e.g. A + B  
-or ternary_logic.gates.AND(A, B)
+e.g.
+<pre>
+A ^ B  
+</pre>
+or
+<pre>
+ternary_logic.gates.OR(A, B)
+</pre>
+The AND gate can be called using '+'.
+
+e.g.
+<pre>
+A + B
+</pre>
+or
+<pre>
+ternary_logic.gates.AND(A, B)
+</pre>
 
 for a demonstration, see main.py
