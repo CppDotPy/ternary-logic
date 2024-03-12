@@ -54,7 +54,7 @@ class gates:
 
         gates.validate(A)
 
-        if A.state == ternary.R: return ternary(Ternary.G)
+        if A.state == ternary.R: return ternary(ternary.G)
         else: return ternary(ternary.R)
 
     def SWITCH(A):
